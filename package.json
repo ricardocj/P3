@@ -1,0 +1,20 @@
+{
+  "name": "ricardo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.5.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6",
+    "style-loader": "^2.0.0",
+    "webpack-dev-middleware": "^4.0.2"
+  }
+}
