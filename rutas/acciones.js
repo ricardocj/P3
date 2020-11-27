@@ -1,6 +1,19 @@
 const express = require('express');
 const router = express.Router();
 
+const mysqlConnection = require('../BD/database.js');
+
+// GET all Employees
+router.get('/Get_Dueno', (req, res) => {
+  mysqlConnection.query('select * from Dueno', (err, rows, fields) => {
+    if(!err) {
+      res.json(rows);
+    } else {
+      console.log(err);
+    }
+  });  
+});
+
 // GET all Employees
 router.get('/', (req, res) => {
     res.json("Hola Todo en Orden!!");
